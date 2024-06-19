@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { NavigationContainer, useFocusEffect } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold, Poppins_800ExtraBold, Poppins_900Black, } from '@expo-google-fonts/poppins';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, TextInput, Keyboard, TouchableWithoutFeedback, Alert, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, TextInput, Alert, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const getCurrentDate=()=>{
@@ -88,11 +88,11 @@ const getConsumoEst = async (tipo) => {
       }
     } else {
       console.log("Tipo errado ao tentar getConsumoEst");
-      return "Erro ao carregar"; // Certifique-se de retornar algo em caso de tipo inválido
+      return "Erro ao carregar"; 
     }
   } catch (e) {
     console.log("Erro ao tentar getConsumoEst()");
-    console.error(e); // Adiciona o erro ao log para mais informações
+    console.error(e); 
     return "Erro ao carregar";
   }
 
