@@ -20,24 +20,28 @@ Gas.to é um aplicativo desenvolvido em React Native usando Expo para auxiliar n
 
 ## Tecnologias Utilizadas
 
-- **React Native**: Framework principal para desenvolvimento do aplicativo.
-- **Expo**: Ferramenta para facilitar o desenvolvimento com React Native.
-- **JavaScript/TypeScript**: Linguagem de programação utilizada.
-- **Redux**: Gerenciamento de estado.
-- **React Navigation**: Navegação entre telas.
-- **Axios**: Requisições HTTP (se aplicável).
+- **React Native:** Framework principal para desenvolvimento do aplicativo.
+- **Expo:** Ferramenta para visualizar o desenvolvimento com React Native no iOS e Android.
+- **JavaScript:** Linguagem de programação utilizada.
+####Alguns componentes:
+- **React Navigation:** Navegação entre telas.
+- **TouchableOpacity:** para a fácil criação de botões.
+- **AsyncStorage:** Para armazenar dados localmente.
+- **ScrollView:** para visualizar telas mais longas utilizando o scroll.
+- **useState, useEffect, useCallback:** para poder renderizar as telas constantemente.
+- **Entre outros como:** Image, Switch, TextInput, Alert
 
 ## Instalação
 
 Siga os passos abaixo para instalar e executar o projeto localmente:
 
 1. **Clone o repositório:**
-
    ```
-   git clone https://github.com/seu-usuario/gas.to.git
+   git clone https://github.com/luigilg/Gas.to
+   ```
 2. **Navegue até o diretório do projeto:**
     ```
-    cd gas.to
+    cd Gas.to
     ```
 3. **Instale as dependências:**
     ```
@@ -69,7 +73,7 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
   - Na tela de cálculo, insira o número de pessoas para dividir o custo.
   - Se necessário, repita o processo para a volta.
 
-## Como Calcular o Consumo do Carro
+## Como calcular o consumo do carro da melhor forma 
 
 #### Para calcular, é ideal que considere os passos a seguir:
 
