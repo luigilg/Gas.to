@@ -84,8 +84,5 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 
 ## Créditos
 - Luigi Ledermann Girardi
-- João José Moreira Ramos Neto
-- Gabriel Mendes Tulio
-- Guilherme Roncon Malta
 
 #
