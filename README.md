@@ -1,4 +1,6 @@
-# Gas.to
+ <img src="./assets/gas-to_logo.png" alt="drawing" width="200"/>
+
+<h1>Gas.to</h1>
 
 Gas.to é um aplicativo desenvolvido em React Native usando Expo para auxiliar no controle de consumo de combustível do seu carro, tanto na cidade quanto na estrada. Com ele, você pode calcular os gastos de uma viagem, dividir as despesas com outras pessoas e monitorar a eficiência do seu veículo.
 
@@ -54,11 +56,19 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 
 ## Uso
 
+  ### Tela inicial
+ <img src="./assets/1-tela_inicial.png" alt="drawing" width="250"/>
+
   ### Controle de Consumo de Combustível
+
   #### Registro de Consumo:
   - Acesse a tela de registro.
   - Insira os dados de consumo (quilometragem, litros abastecidos, etc.).
   - Salve as informações para monitoramento contínuo.
+ 
+  <!-- ### Tela de medição de consumo: -->
+ <img src="./assets/2-nova_medicao.PNG" alt="drawing" width="250"/>
+ 
   ### Cálculo de Gasto de Viagem
   #### Informar Detalhes da Viagem:
   - Acesse a tela de cálculo de viagem.
@@ -68,10 +78,14 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
   #### Calcular Custo Total:
   - O aplicativo calculará automaticamente o custo total da viagem.
 
-  ### Divisão de Despesas
-  #### Informar Número de Pessoas:
+  #### Divisão de Despesas
+  ##### Informar Número de Pessoas:
   - Na tela de cálculo, insira o número de pessoas para dividir o custo.
   - Se necessário, repita o processo para a volta.
+
+  <!-- ### Tela de gasto de viagem: -->
+ <img src="./assets/3-gasto_viagem.PNG" alt="drawing" width="250"/>
+
 
 ## Como calcular o consumo do carro da melhor forma 
 

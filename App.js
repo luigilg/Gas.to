@@ -99,7 +99,7 @@ const getConsumoEst = async (tipo) => {
 };
 
 function HomeScreen({ navigation, route }) {
-  console.log("Inicio");
+  // console.log("Inicio");
 
   const [consumoUrb, setConsumoUrbState] = useState("Carregando...");
   const [consumoEst, setConsumoEstState] = useState("Carregando...");
@@ -969,10 +969,11 @@ function GastoViagem({ navigation, route }) {
             />
           </View>
         )}
-          <Text style={[s.txtPadrao,{marginBottom: 10}]}>Consumo: <Text style={s.txtPadrao2}>{consumoEst} km/L</Text></Text>
+          <Text style={[s.txtPadrao,{marginBottom: 0}]}>Consumo: <Text style={s.txtPadrao2}>{consumoEst} km/L</Text></Text>
         
         
         
+          <Text style={[s.titulo2, {marginTop: 10, fontSize: 30}, s.txtAmarelo]}>Valores:  </Text>
         {check() &&
           <View style={s.resultado1}>
             {switches.litroSalvo ? (
@@ -985,15 +986,15 @@ function GastoViagem({ navigation, route }) {
                         <Text style={s.nConsumo}>{gastoTotal2(distancia, valorLitro).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
                         <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto da <Text style={s.txtAmarelo}>ida ou volta</Text>:</Text>
                         <Text style={s.nConsumo}>{gastoTotal(distancia, valorLitro).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa na <Text style={s.txtAmarelo}>ida</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa na <Text style={s.txtAmarelo}>ida</Text>:</Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, valorLitro, numeroPessoas).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa na <Text style={s.txtAmarelo}>volta</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa na <Text style={s.txtAmarelo}>volta</Text>:</Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, valorLitro, numeroPessoasVolta).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
                       </View>
                     ) : (
                       <View>
                         <Text style={s.nConsumo}>{gastoTotal(distancia, valorLitro).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa: </Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa: </Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, valorLitro, numeroPessoas).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
                       </View>
                     )}
@@ -1003,7 +1004,7 @@ function GastoViagem({ navigation, route }) {
                     {switches.volta ? (
                       <View>
                         <Text style={s.nConsumo}>{gastoTotal2(distancia, valorLitro).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto da <Text style={s.txtAmarelo}>ida ou volta</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto só de <Text style={s.txtAmarelo}>ida ou volta</Text>:</Text>
                         <Text style={s.nConsumo}>{gastoTotal(distancia, valorLitro).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
                       </View>
                     ) : (
@@ -1022,17 +1023,17 @@ function GastoViagem({ navigation, route }) {
                     {switches.volta ? (
                       <View>
                         <Text style={s.nConsumo}>{gastoTotal2(distancia, formatar(valorLitroDig)).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto da <Text style={s.txtAmarelo}>ida ou volta</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto só de <Text style={s.txtAmarelo}>ida ou volta</Text>:</Text>
                         <Text style={s.nConsumo}>{gastoTotal(distancia, formatar(valorLitroDig)).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa na <Text style={s.txtAmarelo}>ida</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa na <Text style={s.txtAmarelo}>ida</Text>:</Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, formatar(valorLitroDig), numeroPessoas).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa na <Text style={s.txtAmarelo}>volta</Text>:</Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa na <Text style={s.txtAmarelo}>volta</Text>:</Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, formatar(valorLitroDig), numeroPessoasVolta).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
                       </View>
                     ) : (
                       <View>
                         <Text style={s.nConsumo}>{gastoTotal(distancia, formatar(valorLitroDig)).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})} </Text>
-                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto p/ pessoa: </Text>
+                        <Text style={[s.txtConsumo, {marginTop: 10}]}>Gasto por pessoa: </Text>
                         <Text style={s.nConsumo}>{divisaoPessoas(distancia, formatar(valorLitroDig), numeroPessoas).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</Text>
                       </View>
                     )}
@@ -1103,7 +1104,7 @@ const s = StyleSheet.create({
   cTitulo:{
     marginLeft: 12,
     marginTop: 40,
-    marginBottom: 30,
+    marginBottom: 20,
   },
   cTitulo2:{
     flexDirection: 'row',
@@ -1144,7 +1145,7 @@ const s = StyleSheet.create({
   titulo: {
     color: '#EAEAEA',
     fontFamily: 'Poppins_800ExtraBold',
-    fontSize: 65, 
+    fontSize: 50, 
     fontWeight: '800'
   },
   titulo2: {
@@ -1163,7 +1164,7 @@ const s = StyleSheet.create({
   },
   txtConsumo: {
     color: '#EAEAEA',
-    fontSize: 26,
+    fontSize: 24,
     fontFamily: 'Poppins_500Medium',
   },
   txtBranco: {
