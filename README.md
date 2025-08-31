@@ -97,6 +97,6 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 4. Registre quantos litros foram abastecidos para completar.
 
 ## Créditos
-- Luigi Ledermann Girardi
+- Luigi Ledermann Girardi, 2024
 
 #
